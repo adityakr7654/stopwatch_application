@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(stopwatch.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: white;
+    font-size: 6rem;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    
+}
+
+.container {
+    background-color: #f4f014;
+    width: 80%;
+    max-width: 500px;
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    padding-top: 0;
+    padding-bottom: 60px;
+    border-radius: 5rem;
+    box-shadow: rgba(234, 3z, 3, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.timer-Display {
+    width: 100%;
+    background: #9c8c2d;
+    padding: 40px 0;
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    border-radius: 5rem 10px 0 0;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+        rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+        rgba(0, 0, 0, 0.06) 0px 2px 1px,
+        rgba(0, 0, 0, 0.09) 0px 4px 2px,
+        rgba(0, 0, 0, 0.09) 0px 8px 4px,
+        rgba(0, 0, 0, 0.09) 0px 16px 8px,
+        rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.laps {
+    text-align: center;
+    color: black;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+}
+
+.buttons {
+    width: 85%;
+    margin: 40px auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+
+}
+
+.buttons button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 7rem;
+}
+
+.buttons button:hover {
+    background-color: #141313;
+    color: #ffffff;
+    border: 2px solid #b6b6b6;
+    padding: 7px 15px;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+
+    .timer-Display {
+        font-size: 1.5rem;
+    }
+}
